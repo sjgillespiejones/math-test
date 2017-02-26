@@ -12,6 +12,7 @@ import { ResultComponent } from './components/page/result.component';
 // UI Components
 import { HeadingComponent } from './components/ui/heading.component';
 import {QuestionComponent } from './components/ui/question.component';
+import {AnswerComponent} from './components/ui/answer.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
@@ -23,7 +24,8 @@ import {QuestionComponent } from './components/ui/question.component';
     ResultComponent,
     // UI components
     HeadingComponent,
-    QuestionComponent
+    QuestionComponent,
+    AnswerComponent
   ],
   bootstrap:    [ AppComponent ]
 })

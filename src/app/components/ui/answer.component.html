@@ -1,0 +1,9 @@
+<div class="answer">
+  <h2>{{answer.Question.Title}}</h2>
+  <p>Your Answer</p>
+  <p>{{answer.Question.Answer}}</p>
+  <p>Actual Answer</p>
+  <p>{{answer.ActualAnswer}}</p>
+  <button (click)="toggleSolution()">{{buttonText}}</button>
+  <div *ngIf="solutionShown">{{answer.Explanation}}</div>
+</div>
