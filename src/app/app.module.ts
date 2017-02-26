@@ -1,5 +1,6 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule }   from '@angular/forms';
 
 import { AppComponent }  from './app.component';
 
@@ -10,15 +11,19 @@ import { ResultComponent } from './components/page/result.component';
 
 // UI Components
 import { HeadingComponent } from './components/ui/heading.component';
+import {QuestionComponent } from './components/ui/question.component';
 
 @NgModule({
-  imports:      [ BrowserModule ],
+  imports:      [ BrowserModule, FormsModule ],
   declarations: [
     AppComponent,
+    // Pages
     LandingComponent,
     TestComponent,
     ResultComponent,
-    HeadingComponent
+    // UI components
+    HeadingComponent,
+    QuestionComponent
   ],
   bootstrap:    [ AppComponent ]
 })
