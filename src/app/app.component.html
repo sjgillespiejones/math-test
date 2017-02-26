@@ -5,7 +5,10 @@
       <landing-component (startTest)="startTest()"></landing-component>
     </div>
     <div *ngIf="pageState.test">
-      <test-component></test-component>
+      <test-component (testComplete)="testComplete()"></test-component>
+    </div>
+    <div *ngIf="pageState.result">
+      <result-component></result-component>
     </div>
   </div>
 </div>
