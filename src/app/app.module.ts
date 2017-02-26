@@ -6,6 +6,7 @@ import { AppComponent }  from './app.component';
 // Pages
 import { LandingComponent } from './components/page/landing.component';
 import { TestComponent } from './components/page/test.component';
+import { ResultComponent } from './components/page/result.component';
 
 // UI Components
 import { HeadingComponent } from './components/ui/heading.component';
@@ -16,6 +17,7 @@ import { HeadingComponent } from './components/ui/heading.component';
     AppComponent,
     LandingComponent,
     TestComponent,
+    ResultComponent,
     HeadingComponent
   ],
   bootstrap:    [ AppComponent ]
