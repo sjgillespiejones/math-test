@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 
 // App Component - provides the layout and styles for the app as a whole
-export class AppComponent  { name = 'Angular'; }
+export class AppComponent  {
+  pageState = {
+    landing: true,
+    test: false
+  }
+
+  startTest(){
+    this.pageState.landing = false;
+    this.pageState.test = true;
+  }
+}

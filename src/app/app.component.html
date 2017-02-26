@@ -1,5 +1,11 @@
 <div class="page-layout">
   <div class="page-content">
-
+    <heading-component></heading-component>
+    <div *ngIf="pageState.landing">
+      <landing-component (startTest)="startTest()"></landing-component>
+    </div>
+    <div *ngIf="pageState.test">
+      <test-component></test-component>
+    </div>
   </div>
 </div>
