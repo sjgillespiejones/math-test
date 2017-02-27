@@ -1,4 +1,6 @@
-import { Component, EventEmitter, Output } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit } from '@angular/core';
+import {TestService} from "../../services/test.service";
+import {AnswerModel} from "../../models/answer.model";
 
 @Component({
   selector: 'result-component',
@@ -7,5 +9,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 
 export class ResultComponent{
+  constructor(private testService: TestService){
+  }
+  answers: AnswerModel[] = [];
 
+  ngOnInit(){
+    this.answers = this.testService.getAnswers();
+  }
 }

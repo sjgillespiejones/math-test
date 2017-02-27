@@ -1,10 +1,12 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import {TestService} from "./services/test.service";
 
 @Component({
   selector: 'app-component',
   templateUrl: `app/app.component.html`,
   styleUrls: ['app/app.component.css'],
-  encapsulation: ViewEncapsulation.None
+  encapsulation: ViewEncapsulation.None,
+  providers: [TestService]
 })
 
 // App Component - provides the layout and styles for the app as a whole
