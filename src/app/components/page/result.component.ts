@@ -9,11 +9,16 @@ import {AnswerModel} from "../../models/answer.model";
 })
 
 export class ResultComponent{
+  @Output() restartTest = new EventEmitter();
   constructor(private testService: TestService){
   }
   answers: AnswerModel[] = [];
 
   ngOnInit(){
     this.answers = this.testService.getAnswers();
+  }
+
+  takeTestAgain(){
+    this.restartTest.emit();
   }
 }

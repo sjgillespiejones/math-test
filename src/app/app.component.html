@@ -7,6 +7,6 @@
     <test-component (testComplete)="testComplete()"></test-component>
   </div>
   <div *ngIf="pageState.result">
-    <result-component></result-component>
+    <result-component (restartTest)="startTest()"></result-component>
   </div>
 </div>

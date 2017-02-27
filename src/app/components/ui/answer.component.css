@@ -1,0 +1,13 @@
+.answer{
+  margin-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+
+.answer > * {
+  margin-bottom:10px;
+}
+
+.light-green-button{
+  background-color: rgb(61,203,61);
+  border-color: rgb(61,203,61);
+}

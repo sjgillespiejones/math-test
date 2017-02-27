@@ -1,0 +1,8 @@
+.test-question{
+  border-bottom:1px solid grey;
+  margin-bottom: 20px;
+}
+
+.test-question > * {
+  margin-bottom: 10px;
+}

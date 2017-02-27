@@ -22,10 +22,12 @@ export class AppComponent  {
   startTest(){
     this.pageState.landing = false;
     this.pageState.test = true;
+    this.pageState.result = false;
   }
 
   testComplete(){
     this.pageState.test=false;
     this.pageState.result = true;
+    this.pageState.landing = false;
   }
 }
