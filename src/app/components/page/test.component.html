@@ -1,8 +1,11 @@
-<h2>Test</h2>
-<div class="questions">
-  <div *ngFor="let question of questions">
-    <question-component [model]="question"></question-component>
+<div class="page-content">
+  <h2 class="page-title">Answer All of the Questions</h2>
+  <div class="questions">
+    <div *ngFor="let question of questions">
+      <question-component [model]="question"></question-component>
+    </div>
   </div>
+
+  <button (click)="submitTest()">Submit Answers</button>
 </div>
 
-<button (click)="submitTest()">Submit Answers</button>

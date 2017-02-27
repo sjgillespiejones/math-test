@@ -1,14 +1,12 @@
 <div class="page-layout">
-  <div class="page-content">
-    <heading-component></heading-component>
-    <div *ngIf="pageState.landing">
-      <landing-component (startTest)="startTest()"></landing-component>
-    </div>
-    <div *ngIf="pageState.test">
-      <test-component (testComplete)="testComplete()"></test-component>
-    </div>
-    <div *ngIf="pageState.result">
-      <result-component></result-component>
-    </div>
+  <heading-component></heading-component>
+  <div *ngIf="pageState.landing">
+    <landing-component (startTest)="startTest()"></landing-component>
+  </div>
+  <div *ngIf="pageState.test">
+    <test-component (testComplete)="testComplete()"></test-component>
+  </div>
+  <div *ngIf="pageState.result">
+    <result-component></result-component>
   </div>
 </div>
