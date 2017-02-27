@@ -5,5 +5,5 @@
   <p>Actual Answer</p>
   <p>{{answer.ActualAnswer}}</p>
   <button (click)="toggleSolution()">{{buttonText}}</button>
-  <div *ngIf="solutionShown">{{answer.Explanation}}</div>
+  <pre *ngIf="solutionShown">{{answer.Explanation}}</pre>
 </div>

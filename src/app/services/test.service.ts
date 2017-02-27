@@ -12,7 +12,7 @@ export class TestService{
     ActualAnswer: "5050",
     Explanation: "An easy way to solve this one is to add 1 to 100, then 2 to 99, and so on.\n\n" +
     "Every pair will add up to 101. Given there are 100 numbers in this sequence, there will be fifty pairs.\n\n" +
-    "Therefore this can be changed to 50 x 101.",
+    "Therefore this can be changed to 50 x 101, which equals 5050.",
     Question: {
       Title: "Question 1 - Calculate the answer",
       Question: "Add up every number from 1..100",
